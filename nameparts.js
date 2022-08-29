@@ -7,5 +7,3 @@ const lastName = nameStr.substring(nameStr.lastIndexOf(" ") + 1);
 console.log(firstName.trim());
 console.log(middleName.trim());
 console.log(lastName.trim());
-const length = nameStr.length;
-/* console.log(length); */
