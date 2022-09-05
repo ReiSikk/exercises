@@ -38,3 +38,29 @@ function hexToRgb() {
 }
 
 // rgb to hex
+const rgb = {
+  r: 9,
+  g: 0,
+  b: 37,
+};
+
+/* let rgb;
+let r;
+let g;
+let b; */
+
+function rgbToHex() {
+  const red = rgb.r;
+  const r = red.toString(16).padStart(2, "0");
+  console.log(red);
+  console.log(r);
+  const green = rgb.g;
+  const g = green.toString(16).padStart(2, "0");
+  console.log(g);
+  const blue = rgb.b;
+  const b = blue.toString(16).padStart(2, "0");
+  console.log(b);
+  const hex = r + g + b;
+  console.log(`#${hex}`);
+}
+rgbToHex();
