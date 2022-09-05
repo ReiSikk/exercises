@@ -1,6 +1,6 @@
 "use strict";
 
-getnameParts();
+/* getnameParts(); */
 function getnameParts(nameStr) {
   nameStr = "REI JOHNSON";
   const firstName = nameStr.substring(nameStr.indexOf(""), nameStr.indexOf(" "));
@@ -17,4 +17,12 @@ function getnameParts(nameStr) {
   console.log(middleName.trim());
   console.log(lastName.trim()); */
   console.log({ firstName, middleName, lastName });
+}
+fullName("Potter", "Harry");
+function fullName(lastName, firstName, middleName) {
+  if (typeof middleName != undefined) {
+    console.log(`${firstName} ${lastName}`);
+  } else {
+    console.log(`${firstName} ${middleName} ${lastName}`);
+  }
 }
