@@ -1,3 +1,5 @@
+"use strict";
+
 /* function congrats(name) {
   console.log("Congrats" + name);
 }
@@ -29,11 +31,11 @@ const person4 = {
   lastName: "Weasly",
   hired: false,
 };
-console.log("Person3", person3.hired);
+/* console.log("Person3", person3.hired);
 hireOrFire(hire, person3);
 console.log("Person 3 hired?", person3.hired);
 hireOrFire(fire, person3);
-console.log("Person 3 hired?", person3.hired);
+console.log("Person 3 hired?", person3.hired); */
 
 //////EXERCISE: loadJSON
 const url = "actors.json";
@@ -51,3 +53,11 @@ function loadJSON(url, prepareData) {
 function prepareData(jsonData) {
   console.log("Jif");
 }
+
+///Higher order functions
+
+const people = ["Harry", "Ron", "Hermione", "Neville"];
+
+people.forEach(function (person, i, arr) {
+  console.log(`person: ${person}, index: ${i}, arr: ${arr}`);
+});
